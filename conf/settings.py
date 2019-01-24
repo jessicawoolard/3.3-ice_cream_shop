@@ -41,6 +41,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    ' https://mysterious-meadow-62819.herokuapp.com/',
 
 ]
 
