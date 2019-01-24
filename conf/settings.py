@@ -40,8 +40,8 @@ SECRET_KEY = 'om%3&&en^zv3*p*%om42e-83o@jmwbhk)gwjy=wqwedh-g4)w8'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    ' https://mysterious-meadow-62819.herokuapp.com/',
+    '127.0.0.1',
+    'mysterious-meadow-62819.herokuapp.com',
 
 ]
 
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'conf',
+    'ice_cream_shop',
 ]
 
 MIDDLEWARE = [
