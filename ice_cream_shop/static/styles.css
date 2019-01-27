@@ -1,0 +1,44 @@
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+header img {
+    width: 100%;
+
+}
+header h1 {
+    text-align: center;
+    color: red;
+}
+
+
+div p {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+}
+.daily {
+    width: 50%;
+    float: left;
+
+}
+.weekly {
+    width: 50%;
+    float: right;
+
+}
+.seasonal {
+    margin-top: 30px;
+    width: 50%;
+    float: left;
+
+}
+.featured {
+    margin-top: 30px;
+    width: 50%;
+    float: right;
+
+}
+p input {
+   margin: 0;
+}

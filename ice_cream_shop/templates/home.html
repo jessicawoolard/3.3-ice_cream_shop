@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="daily">
+        <p>Daily Flavors</p>
+        <ul>
+            {% for daily_flavor in daily_flavors %}
+                <li> {{ daily_flavor.flavor }}
+                    <em>({{ daily_flavor.base }} )</em>
+                    <input type="button" title="{{ daily_flavor.churned }}"   value="Date Churned" class="btnShowHide"/>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="weekly">
+        <p>Weekly Flavors</p>
+        <ul>
+            {% for weekly_flavor in weekly_flavors %}
+                <li> {{ weekly_flavor.flavor }}
+                    <em>({{ weekly_flavor.base }} )</em>
+                     <input type="button" title="{{ weekly_flavor.churned }}"   value="Date Churned" class="btnShowHide"/>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="seasonal">
+        <p>Seasonal Flavors</p>
+        <ul>
+            {% for seasonal_flavor in seasonal_flavors %}
+                <li> {{ seasonal_flavor.flavor }}
+                    <em>({{ seasonal_flavor.base }} )</em>
+                     <input type="button" title="{{ seasonal_flavor.churned }}"   value="Date Churned" class="btnShowHide"/>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="featured">
+        <p>Featured Flavors</p>
+        <ul>
+            {% for featured_flavor in featured_flavors %}
+                <li> {{ featured_flavor.flavor }}
+                    <em>({{ featured_flavor.base }} )</em>
+                     <input type="button" title="{{ featured_flavor.churned }}"   value="Date Churned" class="btnShowHide"/>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

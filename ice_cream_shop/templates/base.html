@@ -1,0 +1,27 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Bruster's Creamery</title>
+        {% load static %}
+        <link rel="stylesheet" href='{% static "styles.css" %}'>
+        <link href="ExampleStyle.css" type="text/css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="../static/ScoopAboveTheRest%20-%20Copy.jpg" alt="#">
+                <h1>Bruster's Creamery Menu </h1>
+            </header>
+            {% block content %}
+
+            {% endblock %}
+            {% load static %}
+            <script type="text/javascript" src="{% static "main.js" %}"></script>
+        </div>
+    </body>
+
+</html>
